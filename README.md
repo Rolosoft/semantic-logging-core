@@ -1,4 +1,6 @@
-# semantic-logging-core
+# Semantic Logging Core
+
+[![rolosoft_public_packages MyGet Build Status](https://www.myget.org/BuildSource/Badge/rolosoft_public_packages?identifier=c12b93b4-6337-4cbd-a4ac-dc94eff01819)](https://www.myget.org/)
 
 Core semantic/structured logging for .NET
 
