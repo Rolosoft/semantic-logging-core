@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C99B7F88-506E-4100-9E92-E15C8F3AAC4E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests</RootNamespace>
+    <AssemblyName>Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Azure.KeyVault.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Azure.KeyVault.Core.1.0.0\lib\net40\Microsoft.Azure.KeyVault.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.8.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Data.Edm.5.8.1\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.8.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Data.OData.5.8.1\lib\net40\Microsoft.Data.OData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.8.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Data.Services.Client.5.8.1\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Diagnostics.Tracing.TraceEvent, Version=1.0.41.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.41\lib\net40\Microsoft.Diagnostics.Tracing.TraceEvent.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.WindowsAzure.ConfigurationManager.3.2.3\lib\net40\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WindowsAzure.Storage.8.0.0\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Spatial, Version=5.8.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Spatial.5.8.1\lib\net40\System.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Etw\ConfigurationExceptionFixture.cs" />
+    <Compile Include="Etw\ConfigurationReaderFixture.cs" />
+    <Compile Include="Etw\Configuration\MySinkElement.cs">
+      <DependentUpon>MySinkElement.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Etw\ConsoleSinkElementFixture.cs" />
+    <Compile Include="Etw\EventSourceSettingsFixture.cs" />
+    <Compile Include="Etw\ExtensionsLoaderFixture.cs" />
+    <Compile Include="Etw\FormatterFactoryFixture.cs" />
+    <Compile Include="Etw\SinkSettingsFixture.cs" />
+    <Compile Include="Etw\SqlDatabaseSinkElementFixture.cs" />
+    <Compile Include="Etw\TraceEventServiceConfigurationFixture.cs" />
+    <Compile Include="Etw\TraceEventServiceFixture.cs" />
+    <Compile Include="Etw\TraceEventServiceSettingsFixture.cs" />
+    <Compile Include="Etw\TraceEventServiceWorkerFixture.cs" />
+    <Compile Include="Etw\XmlUtilFixture.cs" />
+    <Compile Include="EventSourceSchemaReaderFixture.cs" />
+    <Compile Include="Formatters\DefaultConsoleColorMapperFixture.cs" />
+    <Compile Include="Formatters\EventTextFormatterTests.cs" />
+    <Compile Include="Formatters\JsonEventTextFormatterFixture.cs" />
+    <Compile Include="Formatters\XmlEventTextFormatterFixture.cs" />
+    <Compile Include="Observable\EventEntrySubjectFixture.cs" />
+    <Compile Include="Observable\ObservableProjectionFixture.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SemanticLoggingEventSourceFixture.cs" />
+    <Compile Include="TestObjects\CustomSink.cs" />
+    <Compile Include="TestObjects\DifferentEnumsEventSource.cs" />
+    <Compile Include="TestObjects\InMemoryEventListener.cs" />
+    <Compile Include="TestObjects\LargeManifestEventSource.cs" />
+    <Compile Include="TestObjects\MockColorMapper.cs" />
+    <Compile Include="TestObjects\MockConsoleOutput.cs" />
+    <Compile Include="TestObjects\MockDefaultConsoleColorMapper.cs" />
+    <Compile Include="TestObjects\MockEventListener.cs" />
+    <Compile Include="TestObjects\MockFormatter.cs" />
+    <Compile Include="TestObjects\MockHttpListener.cs" />
+    <Compile Include="TestObjects\MockHttpListenerResponse.cs" />
+    <Compile Include="TestObjects\MultipleTypesEventSource.cs" />
+    <Compile Include="TestObjects\MyCompanyEventSource.cs" />
+    <Compile Include="TestObjects\SimpleEventSource.cs" />
+    <Compile Include="TestObjects\SimpleMessageFormatter.cs" />
+    <Compile Include="TestObjects\StringCollectionEventListener.cs" />
+    <Compile Include="TestObjects\TestEventEntry.cs" />
+    <Compile Include="TestObjects\TestEventSource.cs" />
+    <Compile Include="TestSupport\ArrangeActAssert.cs" />
+    <Compile Include="TestSupport\AssemblyBuilder.cs" />
+    <Compile Include="TestSupport\AssertEx.cs" />
+    <Compile Include="TestSupport\ConfigurationHelper.cs" />
+    <Compile Include="TestSupport\ContextBase.cs" />
+    <Compile Include="TestSupport\DisposableDomain.cs" />
+    <Compile Include="TestSupport\EnumerableAssert.cs" />
+    <Compile Include="TestSupport\EventEntryTestHelper.cs" />
+    <Compile Include="TestSupport\LocalDatabaseContext.cs" />
+    <Compile Include="TestSupport\PollingHelper.cs" />
+    <Compile Include="UsingEventListener\ConsoleEventListenerFixture.cs" />
+    <Compile Include="UsingEventListener\DeferredEnablementFixture.cs" />
+    <Compile Include="UsingEventListener\EventTableEntity.cs" />
+    <Compile Include="UsingEventListener\ObservableEventListenerFixture.cs" />
+    <Compile Include="UsingEventListener\ObservableEventListenerFixture.PartialTrust.cs" />
+    <Compile Include="Utility\BufferedEventPublisherFixture.cs" />
+    <Compile Include="Utility\EventSourceAnalyzerFixture.cs" />
+    <Compile Include="Utility\FileUtilFixture.cs" />
+    <Compile Include="Utility\GuardFixture.cs" />
+    <Compile Include="Utility\NativeMethods.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Etw\Configuration\MySinkElement.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Event.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.snk" />
+    <None Include="_TraceEventProgrammersGuide.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Etw\Configuration\WithBadTypes.xml" />
+    <Content Include="Etw\Configuration\WithDefaultValues.xml" />
+    <Content Include="Etw\Configuration\WithDiff0.xml" />
+    <Content Include="Etw\Configuration\WithDiff1.xml" />
+    <Content Include="Etw\Configuration\WithDiff2.xml" />
+    <Content Include="Etw\Configuration\WithDuplicateNames.xml" />
+    <Content Include="Etw\Configuration\WithEmptyNonStringValues.xml" />
+    <Content Include="Etw\Configuration\WithErrorOnSinkCreation.xml" />
+    <Content Include="Etw\Configuration\WithEventSourceIdOnly.xml" />
+    <Content Include="Etw\Configuration\WithEventSourceNameOnly.xml" />
+    <Content Include="Etw\Configuration\WithExtensions.xml" />
+    <Content Include="Etw\Configuration\WithExtensionsIncompleteParams.xml" />
+    <Content Include="Etw\Configuration\WithExtensionsNoSchemaValidation.xml" />
+    <Content Include="Etw\Configuration\WithExtensionsSchemaValidation.xml" />
+    <Content Include="Etw\Configuration\WithManyEventSources.xml" />
+    <Content Include="Etw\Configuration\WithManyEventSourcesWithArgumentsAndFilters.xml" />
+    <Content Include="Etw\Configuration\WithManySinks.xml" />
+    <Content Include="Etw\Configuration\WithNoEventSourceNameId.xml" />
+    <Content Include="Etw\Configuration\WithWarnings.xml" />
+    <Content Include="Logging.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Logging_log.ldf">
+      <DependentUpon>Logging.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\CreateGenericTable.sql" />
+    <Content Include="Resources\CreateProcedureWriteTraces.sql" />
+    <Content Include="Resources\CreateTracesTable.sql" />
+    <Content Include="Resources\CreateTracesType.sql" />
+    <Content Include="TraceEvent.ReadMe.txt" />
+    <Content Include="TraceEvent.ReleaseNotes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Components\Rolosoft.Practices.EnterpriseLibrary.SemanticLogging\Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.csproj">
+      <Project>{2c0182ab-46ea-4f44-a128-2e286da7a378}</Project>
+      <Name>Rolosoft.Practices.EnterpriseLibrary.SemanticLogging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Components\SemanticLogging.EventSourceAnalyzer\Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.EventSourceAnalyzer.csproj">
+      <Project>{d0efbfab-a337-4fbe-a314-af8f488aec91}</Project>
+      <Name>Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.EventSourceAnalyzer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sinks\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.41\build\Microsoft.Diagnostics.Tracing.TraceEvent.targets" Condition="Exists('..\..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.41\build\Microsoft.Diagnostics.Tracing.TraceEvent.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.41\build\Microsoft.Diagnostics.Tracing.TraceEvent.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.41\build\Microsoft.Diagnostics.Tracing.TraceEvent.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

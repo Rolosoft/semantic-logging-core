@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C0182AB-46EA-4F44-A128-2E286DA7A378}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rolosoft.Practices.EnterpriseLibrary.SemanticLogging</RootNamespace>
+    <AssemblyName>Rolosoft.Practices.EnterpriseLibrary.SemanticLogging</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Practices.EnterpriseLibrary.SemanticLogging.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Diagnostics.Tracing.TraceEvent, Version=1.0.41.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.41\lib\net40\Microsoft.Diagnostics.Tracing.TraceEvent.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\ConsoleSinkElement.cs" />
+    <Compile Include="Configuration\Constants.cs" />
+    <Compile Include="Configuration\CustomFormatterElement.cs" />
+    <Compile Include="Configuration\CustomSinkElement.cs" />
+    <Compile Include="Configuration\EventTextFormatterElement.cs" />
+    <Compile Include="Configuration\FormatterElementFactory.cs" />
+    <Compile Include="Configuration\IFormatterElement.cs" />
+    <Compile Include="Configuration\ISinkElement.cs" />
+    <Compile Include="Configuration\JsonEventTextFormatterElement.cs" />
+    <Compile Include="Configuration\ParameterElement.cs" />
+    <Compile Include="Configuration\XmlEventTextFormatterElement.cs" />
+    <Compile Include="ConsoleLog.cs" />
+    <Compile Include="Etw\Configuration\ConfigurationElement.cs" />
+    <Compile Include="Etw\Configuration\ConfigurationException.cs" />
+    <Compile Include="Etw\Configuration\ConfigurationReader.cs" />
+    <Compile Include="Etw\Configuration\EventSourceArgumentElement.cs" />
+    <Compile Include="Etw\Configuration\EventSourceElement.cs" />
+    <Compile Include="Etw\Configuration\EventSourceProcessFilterElement.cs" />
+    <Compile Include="Etw\Configuration\EventSourceSettings.cs" />
+    <Compile Include="Etw\Configuration\EventSourceSettingsEqualityComparer.cs" />
+    <Compile Include="Etw\Configuration\ExtensionsInspector.cs" />
+    <Compile Include="Etw\Configuration\ExtensionsLoader.cs" />
+    <Compile Include="Etw\Configuration\SinkConfigurationElement.cs" />
+    <Compile Include="Etw\Configuration\SinkSettings.cs" />
+    <Compile Include="Etw\Configuration\SinkSettingsEqualityComparer.cs" />
+    <Compile Include="Etw\Configuration\TraceEventServiceConfiguration.cs" />
+    <Compile Include="Etw\Configuration\TraceEventServiceElement.cs" />
+    <Compile Include="Etw\Configuration\TraceEventServiceSettings.cs" />
+    <Compile Include="Etw\GlobalSuppressions.cs" />
+    <Compile Include="Etw\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Etw\ServiceStatus.cs" />
+    <Compile Include="Etw\StatusChangedEventArgs.cs" />
+    <Compile Include="Etw\TraceEventManifestsCache.cs" />
+    <Compile Include="Etw\TraceEventSchemaCache.cs" />
+    <Compile Include="Etw\TraceEventService.cs" />
+    <Compile Include="Etw\TraceEventServiceWorker.cs" />
+    <Compile Include="Etw\Utility\AssemblyExtensions.cs" />
+    <Compile Include="Etw\Utility\TraceEventUtil.cs" />
+    <Compile Include="EventEntry.cs" />
+    <Compile Include="EventListenerExtensions.cs" />
+    <Compile Include="Formatters\DefaultConsoleColorMapper.cs" />
+    <Compile Include="Formatters\EventTextFormatter.cs" />
+    <Compile Include="Formatters\EventTextFormatting.cs" />
+    <Compile Include="Formatters\IConsoleColorMapper.cs" />
+    <Compile Include="Formatters\IEventTextFormatter.cs" />
+    <Compile Include="Formatters\JsonEventTextFormatter.cs" />
+    <Compile Include="Formatters\PropertyNames.cs" />
+    <Compile Include="Formatters\XmlEventTextFormatter.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Keywords.cs" />
+    <Compile Include="ObservableEventListener.cs" />
+    <Compile Include="Observable\EventEntrySubject.cs" />
+    <Compile Include="Observable\ObservableProjection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Schema\EventSchema.cs" />
+    <Compile Include="Schema\EventSourceSchemaCache.cs" />
+    <Compile Include="Schema\EventSourceSchemaReader.cs" />
+    <Compile Include="SemanticLoggingEventSource.cs" />
+    <Compile Include="SemanticLoggingEventSourceResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SemanticLoggingEventSourceResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SinkSubscription.cs" />
+    <Compile Include="Sinks\ConsoleSink.cs" />
+    <Compile Include="Sinks\FlushFailedException.cs" />
+    <Compile Include="Utility\BufferedEventPublisher.cs" />
+    <Compile Include="Utility\Buffering.cs" />
+    <Compile Include="Utility\EventEntryExtensions.cs" />
+    <Compile Include="Utility\EventEntryUtil.cs" />
+    <Compile Include="Utility\FileUtil.cs" />
+    <Compile Include="Utility\Guard.cs" />
+    <Compile Include="Utility\TextFormatterExtensions.cs" />
+    <Compile Include="Utility\TypeExtensions.cs" />
+    <Compile Include="Utility\XmlExtensions.cs" />
+    <Compile Include="Utility\XmlUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Practices.EnterpriseLibrary.SemanticLogging.snk" />
+    <AdditionalFiles Include="stylecop.json" />
+    <None Include="Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.nuspec" />
+    <None Include="_TraceEventProgrammersGuide.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\Newtonsoft.Json.dll" />
+    <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Etw\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SemanticLoggingEventSourceResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SemanticLoggingEventSourceResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="TraceEvent.ReadMe.txt" />
+    <Content Include="TraceEvent.ReleaseNotes.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.41\build\Microsoft.Diagnostics.Tracing.TraceEvent.targets" Condition="Exists('..\..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.41\build\Microsoft.Diagnostics.Tracing.TraceEvent.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.41\build\Microsoft.Diagnostics.Tracing.TraceEvent.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.41\build\Microsoft.Diagnostics.Tracing.TraceEvent.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

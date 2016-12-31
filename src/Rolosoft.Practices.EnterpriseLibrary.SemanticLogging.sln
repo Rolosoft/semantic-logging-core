@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", "{DD1E3E83-AD21-4780-B357-88413C1897D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rolosoft.Practices.EnterpriseLibrary.SemanticLogging", "Components\Rolosoft.Practices.EnterpriseLibrary.SemanticLogging\Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.csproj", "{2C0182AB-46EA-4F44-A128-2E286DA7A378}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2EB10BDE-34F0-49A8-BC9C-BE461BF172CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests", "Tests\Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests\Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.csproj", "{C99B7F88-506E-4100-9E92-E15C8F3AAC4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.EventSourceAnalyzer", "Components\SemanticLogging.EventSourceAnalyzer\Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.EventSourceAnalyzer.csproj", "{D0EFBFAB-A337-4FBE-A314-AF8F488AEC91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C0182AB-46EA-4F44-A128-2E286DA7A378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0182AB-46EA-4F44-A128-2E286DA7A378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0182AB-46EA-4F44-A128-2E286DA7A378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0182AB-46EA-4F44-A128-2E286DA7A378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C99B7F88-506E-4100-9E92-E15C8F3AAC4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C99B7F88-506E-4100-9E92-E15C8F3AAC4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C99B7F88-506E-4100-9E92-E15C8F3AAC4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C99B7F88-506E-4100-9E92-E15C8F3AAC4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0EFBFAB-A337-4FBE-A314-AF8F488AEC91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0EFBFAB-A337-4FBE-A314-AF8F488AEC91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0EFBFAB-A337-4FBE-A314-AF8F488AEC91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0EFBFAB-A337-4FBE-A314-AF8F488AEC91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2C0182AB-46EA-4F44-A128-2E286DA7A378} = {DD1E3E83-AD21-4780-B357-88413C1897D3}
+		{C99B7F88-506E-4100-9E92-E15C8F3AAC4E} = {2EB10BDE-34F0-49A8-BC9C-BE461BF172CA}
+		{D0EFBFAB-A337-4FBE-A314-AF8F488AEC91} = {DD1E3E83-AD21-4780-B357-88413C1897D3}
+	EndGlobalSection
+EndGlobal

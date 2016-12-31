@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata schemaVersion="2">
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <projectUrl>https://github.com/Rolosoft/semantic-logging-core</projectUrl>    
+    <iconUrl>https://rolosoft.blob.core.windows.net/common/rolosoft128x128.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <summary>The Semantic Logging Application Block provides a set of destinations (sinks) to persist application events published using a subclass of the EventSource class.</summary>
+    <description>$description$</description>
+    <language>en-US</language>
+    <copyright>© 2014 Microsoft Corporation</copyright>
+    <tags>entlib entlib6 slab enterprise library ETW semantic logging EventSource event listener structured strongly-typed block futures OSS</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="mscorlib" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="Microsoft.Diagnostics.Tracing.TraceEvent" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Data.Services.Client" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Transactions" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Web.Extensions" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin\$configuration$\$id$.xml" target="lib\net45"/>
+  </files>
+</package>
