@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Enterprise Library Semantic Logging Application Block")]
 [assembly: AssemblyDescription("The Semantic Logging Application Block provides a set of destinations (sinks) to persist application events published using a subclass of the EventSource class from the System.Diagnostics.Tracing namespace. Sinks include Azure table storage, SQL Server databases, file, console and rolling files with several formats and you can extend the block by creating your own custom formatters and sinks. The console sink is part of this nuget package. Other Sinks mentioned above are available as separate nuget packages. For the sinks that can store structured data, the block preserves the full structure of the event payload in order to facilitate analysing or processing the logged data.\r\n\r\nThis re-implementation is because, as of Dec '16, SematicLogging seems to have been abandoned by Microsoft. By re-implementing, it allows The Community to maintain and update software.\r\n\r\nFull credit, license and attribution for original source go to Microsoft.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Rolosft")]
+[assembly: AssemblyCompany("Rolosoft")]
 [assembly: AssemblyProduct("Rolosoft.Practices.EnterpriseLibrary.SemanticLogging")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2014")]
 [assembly: AssemblyTrademark("")]
