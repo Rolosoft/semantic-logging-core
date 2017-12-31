@@ -63,6 +63,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_instance_from_file_with_default_values : given_traceEventServiceConfiguration
         {
@@ -80,6 +84,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_instance_from_file_with_eventSource_name_only : given_traceEventServiceConfiguration
         {
@@ -97,6 +105,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_instance_from_file_with_eventSource_id_only : given_traceEventServiceConfiguration
         {
@@ -114,6 +126,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_instance_from_file_with_no_eventSource_name_guid : given_traceEventServiceConfiguration
         {
@@ -125,6 +141,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_instance_from_file_with_duplicate_names : given_traceEventServiceConfiguration
         {
@@ -147,6 +167,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_instance_from_file_with_empty_non_string_values : given_traceEventServiceConfiguration
         {
@@ -163,6 +187,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_instance_from_file_with_warnings_validation : given_traceEventServiceConfiguration
         {
@@ -182,6 +210,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_instance_from_file_with_many_eventSources : given_traceEventServiceConfiguration
         {
@@ -212,6 +244,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_instance_from_file_with_many_eventSources_with_filters_and_arguments : given_traceEventServiceConfiguration
         {
@@ -256,6 +292,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_instance_from_file_with_parameters : given_traceEventServiceConfiguration
         {
@@ -282,6 +322,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_disposing_instance : given_traceEventServiceConfiguration
         {
@@ -311,6 +355,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_bad_types : given_traceEventServiceConfiguration
         {
@@ -322,6 +370,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_extending_configuration : given_traceEventServiceConfiguration
         {
@@ -349,6 +401,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_extensions_with_schema_validation : given_traceEventServiceConfiguration
         {
@@ -363,6 +419,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_instance_from_file_with_error_on_sink_creation : given_traceEventServiceConfiguration
         {
@@ -378,6 +438,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_extensions_with_no_schema_validation : given_traceEventServiceConfiguration
         {
@@ -394,6 +458,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_custom_extension_with_incomplete_sink_parameters : given_traceEventServiceConfiguration
         {

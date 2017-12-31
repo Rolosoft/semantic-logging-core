@@ -81,6 +81,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_payload_and_message : given_json_event_text_formatter
         {
@@ -118,6 +122,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_payload_and_message_with_enviroment_activity_id : given_json_event_text_formatter
         {
@@ -168,6 +176,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_payload_and_message_with_enviroment_activity_id_and_related_activity_id : given_json_event_text_formatter
         {
@@ -220,6 +232,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_multiple_events : given_json_event_text_formatter
         {
@@ -242,6 +258,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_message : given_json_event_text_formatter
         {
@@ -265,6 +285,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_multiple_events_in_parallel : given_json_event_text_formatter
         {
@@ -283,6 +307,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_payload_and_null_content : given_json_event_text_formatter
         {
@@ -301,6 +329,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_payload_and_null_formatted_message : given_json_event_text_formatter
         {
@@ -322,6 +354,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_writing_null_entry : given_json_event_text_formatter
         {
@@ -349,6 +385,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_writing_to_null_writer : given_json_event_text_formatter
         {
@@ -373,6 +413,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_multiple_payload_types : given_json_event_text_formatter
         {
@@ -402,6 +446,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_enum_in_payload : given_json_event_text_formatter
         {
@@ -424,6 +472,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_short_enum_in_payload : given_json_event_text_formatter
         {
@@ -448,6 +500,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_multiple_enums_in_payload : given_json_event_text_formatter
         {
@@ -478,6 +534,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_formatter_configured_to_leave_off_separator : given_json_event_text_formatter
         {

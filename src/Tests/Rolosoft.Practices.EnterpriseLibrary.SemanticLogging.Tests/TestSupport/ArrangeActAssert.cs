@@ -9,6 +9,10 @@ namespace Microsoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.TestSuppor
     /// methods to set up test actions and the "when" statements. "Then" is
     /// encapsulated by the [TestMethod]s themselves.
     /// </summary>
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
     [TestClass]
     public abstract class ArrangeActAssert
     {

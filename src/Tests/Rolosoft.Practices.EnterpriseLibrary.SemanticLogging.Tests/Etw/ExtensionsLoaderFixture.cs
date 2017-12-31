@@ -31,6 +31,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             return schemas.SingleOrDefault(s => Path.GetFileName(s).Equals(schemaFile, StringComparison.OrdinalIgnoreCase));
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_creating_instance_and_query_for_sinkExtensions : given_extensionsloader
         {
@@ -49,6 +53,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_creating_instance_and_query_for_eventTextFormattersExtensions : given_extensionsloader
         {
@@ -68,6 +76,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_creating_instance_and_query_for_schemas : given_extensionsloader
         {
@@ -86,6 +98,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_custom_sinks_from_external_assemblies : given_extensionsloader
         {
@@ -148,6 +164,10 @@ namespace Test
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_internal_custom_sinks_from_external_assemblies : given_extensionsloader
         {
@@ -210,6 +230,10 @@ namespace Test
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_loading_custom_formatter_from_external_assemblies : given_extensionsloader
         {

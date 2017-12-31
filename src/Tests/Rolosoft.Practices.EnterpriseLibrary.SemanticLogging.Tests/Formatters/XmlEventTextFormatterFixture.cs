@@ -73,6 +73,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             get { return entries ?? (entries = XDocument.Parse("<Events>" + this.RawOutput + "</Events>").Root.Elements()); }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_payload_and_message : given_xml_event_text_formatter
         {
@@ -126,6 +130,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_payload_and_message_with_ambient_activity_id : given_xml_event_text_formatter
         {
@@ -189,6 +197,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_payload_and_message_and_related_activity_id_with_ambient_activity_id : given_xml_event_text_formatter
         {
@@ -254,6 +266,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_payload_and_xml_content : given_xml_event_text_formatter
         {
@@ -275,6 +291,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_multiple_events_with_payload_and_message : given_xml_event_text_formatter
         {
@@ -299,6 +319,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_enum_in_payload : given_xml_event_text_formatter
         {
@@ -321,6 +345,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_short_enums_in_payload : given_xml_event_text_formatter
         {
@@ -347,6 +375,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_multiple_enums_in_payload : given_xml_event_text_formatter
         {
@@ -389,6 +421,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_setting_indentation_none : given_xml_event_text_formatter
         {
@@ -411,6 +447,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_validating_with_event_schema : given_xml_event_text_formatter
         {
@@ -439,6 +479,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_payload_and_null_content : given_xml_event_text_formatter
         {
@@ -455,6 +499,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_payload_and_null_formatted_message : given_xml_event_text_formatter
         {
@@ -471,6 +519,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_writing_null_entry : given_xml_event_text_formatter
         {
@@ -498,6 +550,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_writing_to_null_writer : given_xml_event_text_formatter
         {
@@ -522,6 +578,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_multiple_payload_types : given_xml_event_text_formatter
         {
