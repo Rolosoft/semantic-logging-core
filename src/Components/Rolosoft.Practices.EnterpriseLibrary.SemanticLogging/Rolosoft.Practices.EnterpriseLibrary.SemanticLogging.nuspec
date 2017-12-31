@@ -12,6 +12,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <summary>The Semantic Logging Application Block provides a set of destinations (sinks) to persist application events published using a subclass of the EventSource class.</summary>
     <description>$description$</description>
+    <releaseNotes>Maintenance release. Updated packages.</releaseNotes>
     <language>en-US</language>
     <copyright>© 2014 Microsoft Corporation</copyright>
     <tags>entlib entlib6 slab enterprise library ETW semantic logging EventSource event listener structured strongly-typed block futures OSS</tags>
