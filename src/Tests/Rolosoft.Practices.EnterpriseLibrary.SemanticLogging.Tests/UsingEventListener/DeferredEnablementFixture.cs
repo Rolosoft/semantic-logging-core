@@ -7,6 +7,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.UsingEventListener
 {
+
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
     [TestClass]
     public class DeferredEnablementFixture
     {

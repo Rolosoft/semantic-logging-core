@@ -10,6 +10,10 @@ using Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Observable;
 
 namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Observable
 {
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
     [TestClass]
     public class EventEntrySubjectFixture
     {

@@ -9,6 +9,11 @@ using Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.TestObjects;
 
 namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Utility
 {
+
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
     [TestClass]
     public class given_eventSourceAnalyzer
     {

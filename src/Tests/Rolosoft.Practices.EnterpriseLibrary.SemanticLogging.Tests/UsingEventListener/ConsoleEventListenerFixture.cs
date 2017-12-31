@@ -45,6 +45,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.UsingEventL
             listener.Dispose();
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_without_payload_nor_message : given_console_event_listener
         {
@@ -68,6 +72,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.UsingEventL
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_payload : given_console_event_listener
         {
@@ -90,6 +98,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.UsingEventL
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_message : given_console_event_listener
         {
@@ -113,6 +125,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.UsingEventL
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_event_with_payload_and_message : given_console_event_listener
         {
@@ -137,6 +153,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.UsingEventL
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_multiple_events_with_message : given_console_event_listener
         {
@@ -155,6 +175,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.UsingEventL
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_information_event_with_message : given_console_event_listener
         {
@@ -177,6 +201,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.UsingEventL
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_verbose_event_with_message : given_console_event_listener
         {
@@ -196,6 +224,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.UsingEventL
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_error_event_with_message : given_console_event_listener
         {
@@ -215,6 +247,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.UsingEventL
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_critical_event_with_message : given_console_event_listener
         {
@@ -234,6 +270,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.UsingEventL
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_providing_a_custom_formatter_with_payload : given_console_event_listener
         {
@@ -257,6 +297,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.UsingEventL
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_providing_a_custom_colormapper_with_error : given_console_event_listener
         {
@@ -283,6 +327,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.UsingEventL
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_receiving_concurrent_events_with_message : given_console_event_listener
         {
@@ -300,6 +348,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.UsingEventL
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_providing_a_failed_formatter_with_payload : given_console_event_listener
         {
@@ -343,6 +395,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.UsingEventL
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_a_formatter_fails_flush_should_not_dump_invalid_output : given_console_event_listener
         {

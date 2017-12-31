@@ -11,6 +11,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
     using System.Xml.Schema;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+#if !DEBUG
+    // Do not run on build server
+    [Ignore]
+#endif
     [TestClass]
     public class given_configurationException_initializer
     {

@@ -11,6 +11,11 @@ using Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Utility;
 
 namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Utility
 {
+
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
     [TestClass]
     public class bufferedEventPublisher_given_configuration
     {
@@ -122,6 +127,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Utility
             return batch.Count;
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_post_events_and_interval_expire : given_bufferedEventPublisher
         {
@@ -154,6 +163,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Utility
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_post_events_and_flushAsync : given_bufferedEventPublisher
         {
@@ -181,6 +194,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Utility
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_post_events_before_and_after_retry_started : given_bufferedEventPublisher
         {
@@ -215,6 +232,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Utility
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_post_events_with_count_only : given_bufferedEventPublisher
         {
@@ -241,6 +262,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Utility
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_post_events_with_interval_only : given_bufferedEventPublisher
         {
@@ -273,6 +298,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Utility
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_post_events_with_count_only_and_flush : given_bufferedEventPublisher
         {
@@ -301,6 +330,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Utility
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_post_events_with_internval_only_and_flush : given_bufferedEventPublisher
         {
@@ -334,6 +367,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Utility
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_post_events_with_count_only_and_multi_flush : given_bufferedEventPublisher
         {
@@ -380,6 +417,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Utility
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_post_events_with_count_and_interval_with_count_first : given_bufferedEventPublisher
         {
@@ -406,6 +447,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Utility
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_post_events_with_count_and_interval_with_interval_first : given_bufferedEventPublisher
         {
@@ -432,6 +477,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Utility
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_publishing_more_than_buffering_count : given_bufferedEventPublisher
         {
@@ -463,6 +512,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Utility
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_throwing_exception_on_publish : given_bufferedEventPublisher
         {

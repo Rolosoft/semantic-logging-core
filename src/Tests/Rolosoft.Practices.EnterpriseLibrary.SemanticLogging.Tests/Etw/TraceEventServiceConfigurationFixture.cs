@@ -19,6 +19,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
     using SemanticLogging.Etw.Configuration;
     using TestObjects;
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
     [TestClass]
     public class given_traceEventServiceConfigurationInstance
     {

@@ -9,6 +9,10 @@ using Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Formatters;
 
 namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
 {
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
     [TestClass]
     public class DefaultConsoleColorMapperFixture
     {

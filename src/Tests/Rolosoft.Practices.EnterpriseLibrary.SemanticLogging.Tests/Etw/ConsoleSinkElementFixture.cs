@@ -22,7 +22,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
 
             sut = new ConsoleSinkElement();
         }
-
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_query_for_canCreateSink : given_consoleSinkElement
         {
@@ -32,7 +35,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
                 Assert.IsTrue(sut.CanCreateSink(element));
             }
         }
-
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_createSink_with_default_parameters : given_consoleSinkElement
         {
@@ -49,7 +55,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
                 Assert.IsNotNull(observer);
             }
         }
-
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_createSink_with_colorMapper_parameter : given_consoleSinkElement
         {

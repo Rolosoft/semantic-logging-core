@@ -13,6 +13,11 @@ using Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Schema;
 
 namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.UsingEventListener
 {
+
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
     [TestClass]
     public class ObservableEventListenerFixture : ArrangeActAssert
     {

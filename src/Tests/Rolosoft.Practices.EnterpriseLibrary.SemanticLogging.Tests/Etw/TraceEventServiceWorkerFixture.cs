@@ -36,6 +36,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_creating_instance_with_null_arguments : given_traceEventServiceWorker
         {
@@ -80,6 +84,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
             }
         }
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
         [TestClass]
         public class when_updating_session : given_traceEventServiceWorker
         {

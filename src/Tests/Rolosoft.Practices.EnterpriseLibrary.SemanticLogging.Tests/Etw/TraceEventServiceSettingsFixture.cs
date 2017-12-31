@@ -8,6 +8,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using SemanticLogging.Etw.Configuration;
 
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
     [TestClass]
     public class given_traceEventServiceSettings_configuration
     {

@@ -9,6 +9,10 @@ using Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Utility;
 
 namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
 {
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
     [TestClass]
     public class given_xmlUtil
     {

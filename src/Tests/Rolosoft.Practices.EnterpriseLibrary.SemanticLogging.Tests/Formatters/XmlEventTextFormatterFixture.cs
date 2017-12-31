@@ -16,6 +16,10 @@ using Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.TestObjects;
 
 namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Formatters
 {
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
     [TestClass]
     public class given_xml_event_text_formatter_configuration : ContextBase
     {

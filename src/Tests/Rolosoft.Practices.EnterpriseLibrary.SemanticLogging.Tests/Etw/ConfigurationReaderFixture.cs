@@ -7,7 +7,10 @@ namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
     using Microsoft.Practices.EnterpriseLibrary.SemanticLogging.Etw.Configuration;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using SemanticLogging.Etw.Configuration;
-
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
     [TestClass]
     public class given_configurationReaderInstance
     {

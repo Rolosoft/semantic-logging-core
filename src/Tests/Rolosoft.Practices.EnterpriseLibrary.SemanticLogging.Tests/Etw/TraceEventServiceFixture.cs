@@ -19,6 +19,11 @@ using Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.TestObjects;
 
 namespace Rolosoft.Practices.EnterpriseLibrary.SemanticLogging.Tests.Etw
 {
+
+#if !DEBUG
+// Do not run on build server
+    [Ignore]
+#endif
     [TestClass]
     public class given_traceEventService_instance
     {
